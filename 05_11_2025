@@ -1,0 +1,104 @@
+insert into pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, retorno, tipo_servico, zona, preco, pago_em_dinheiro, entregador, status) 
+values (150233, 'Wilti Ótica LDTA', null, 'Visoarte Laboratório Ótico', 'Chaves barcelos 36/904', 'Wilti Ótica LDTA', 'Rua lima e Silva 594/sala 4', 0, 'expressa' , 'A', 14 , 0, 'Symon', 'entregue');
+
+insert into pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, retorno, tipo_servico, zona, preco, pago_em_dinheiro, entregador, status) 
+values (150231, 'Francesa Osorio de Napoli' , 'Costureira' , null, 'Cristovão Colombo, 460 sala 401', null, 'Casemiro 758', 0, 'expressa', 'B', 17, 0, '*indefinido', 'entregue'); 
+
+insert into pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, retorno, tipo_servico, zona, preco, pago_em_dinheiro, entregador, status) 
+values (150230, 'Wilti Ótica LDTA', 'Wilti Ótica LDTA', 'Eduardo', 'Padre Chagas 66' , 'Wilti Ótica LDTA', 'Rua lima e Silva 594/sala 4 (Bairro: Cidade Baixa)', 0, 'expressa' , 'A', 14 , 0, 'Symon', 'entregue' );
+
+insert into pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, retorno, tipo_servico, zona, preco, pago_em_dinheiro, entregador, status) 
+values (150229, 'Wilti Ótica LDTA', 'Wilti Ótica LDTA', 'Eduardo', 'Rua Padre Chagas 66', 'Visoarte Laboratório Ótico', 'Chaves Barcelos 36/905',  0, 'expressa' , 'A', 14 , 0, 'Symon', 'entregue');
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150228, 'Transferência', NULL , 'Renao $', 'Avenida Julio de Castilhos, 159 sala 603/ Centro Histórico','Cristiane', 'Avenida Amazonas, 933 APTO 01', 'expressa', 'C', '20,00', 'Symon', 'entregue', '2025-10-22 14:00:00', ' 2025-10-22 13:53:00' , 0, 0 );
+
+UPDATE pedidos SET entrega_empresa = 'Bonjour Estamparia' , entrega_endereco = 'Vigário José Inácio, 625 loja 2' , tipo_servico = 'expressa', zona = 'A' , preco = '12,00', entregador = 'Escher', status = 'entregue', data_hora_coleta = '2025-10-22 14:02:00', data_registro = '2025-10-22 14:02:00' , retorno = 0 , pago_em_dinheiro = 0 WHERE codigo = 150228;
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150226, 'Concuca Confecções Eireli', 'Concuca Confecções Eireli', null, 'Av Osvaldo Aranha1423 sala 304 1423, 304', 'Bianca Pacheco', 'Martim Aranha,100/ 401', 'SameDay', 'B', '9,00' , 'Escher', 'entregue', '2025-10-22 13:17:00', '2025-10-22 13:17:00', 0, 0 ); 
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150225, 'Navegação Aliança', null, 'Laury', 'Avenida Padre Cacique, 320/ 6 andar', 'Lusane ou Ritiel', 'Rua dos Andradas, 1000/ 11 andar', 'urgente', 'C', '24,00', 'Symon', 0, '2025-10-22 13:19:00', '2025-10-22 13:21:00', 0 , 0);
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150224, 'Concuca Confecções Eireli', 'Concuca Confecções Eireli', null, null, 'Giuliana Beduschi', 'João Pessoa 1784', null,null,null,null,null,null,null,null,null ); 
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150223, 'Concuca Confecções Eireli', 'Concuca Confecções Eireli', null, null, 'Caroline Elias', 'Padre Chagas 415/1001', null,null,null,null,null,null,null,null,null ); 
+
+UPDATE pedidos set coleta_endereco = 'Av Osvaldo Aranha1423 sala 304 1423, 304', tipo_servico = 'SamyDay', zona = 'B', preco = '9,00', entregador = 'Escher', status = 0,  data_hora_coleta = '2025-10-22 13;17:00' , data_registro = '2025-10-22 13;17:00' , retorno = 0, pago_em_dinheiro = 0,  where codigo = 150223 or 150224;
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150222, 'Francesca Osório de Napoli','Francesca Osório de Napoli', 'Francesca', '++entre13h30e14h00++ Osvaldo Aranha, 1022/1203 (bairro: Bom Fim)', 'depósito', 'Cristóvão Colombo1060 sala 301, sala 301', 'urgente','B', '22,00', 'Escher', 0, '2025-10-22 12:4:00', '2025-10-22 12:4:00', 0, 0 );
+
+UPDATE pedidos set data_hora_coleta = '2025-10-22 12:48:00' , data_registro = '2025-10-22 12:48:00'where codigo = 150222;
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150221, 'Baleia Livraria', 'Baleia Livraria', 'Nanni Rios/ Ju', 'Rua dos Andradas, 351', 'Nicolas Saleh', '++atéàs16h00++ R Cel. Bordini 1033','econômica', 'B' , '15,00', 'Symon', 0 , '2025-10-22 11:47:00', '2025-10-22 11:47:00', 0,0 ); 
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150220, 'Baleia Livraria', 'Baleia Livraria', 'Nanni Rios/ Ju', 'Rua dos Andradas, 351', 'Regina Kohlnausch', 'Rua Oscar Bitencourt, 55/1301','econômica', 'B' , '15,00', 'Symon', 0 , '2025-10-22 11:47:00', '2025-10-22 11:47:00', 0,0 ); 
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150219, 'Francesca Osório de Napoli', 'Costureira', null, '++15h++Cristóvao Colombo, 1160/ sala 301', null,'casemiro 578', 'urgente', 'B', '22,00', 'Escher', 0 , '2025-10-22 15:00:00', '2025-10-02 16:03:00', 0,0  );
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150218, 'Francesca Osório de Napoli', null, 'pedrinhas', 'Rua casemiro, 758', 'envelope','++confirmar horário++Rua Felipe de Oliveira, 1700/202 ', 'expressa', 'C', '20,00', 'Escher', 0 , '2025-10-22 10:59:00', '2025-10-22 10:59:00', 0,0  );
+
+INSERT INTO pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta , data_registro , retorno, pago_em_dinheiro ) 
+values (150217, 'Wilti Ótica LDTA','Wilti Ótica LDTA',null, 'Rua lima e Silva 594/sala 4',  'Visoarte Laboratório Ótico', 'Chaves barcelos 36/904', 'expressa' , 'A', '14,00', 'Symon', 0, '2025-10-22 10:49:00', '2025-10-22 10:49:00', 0, 0);
+
+#05/11/2025 
+
+SELECT * FROM pedidos p  WHERE NOT (codigo = 150223  OR codigo = 150224);
+
+SELECT * FROM pedidos p  WHERE coleta_endereco = 'Av Osvaldo Aranha1423 sala 304 1423, 304' AND  NOT (codigo = 150223  OR codigo = 150224);
+
+UPDATE  pedidos SET coleta_endereco = NULL  WHERE coleta_endereco = 'Av Osvaldo Aranha1423 sala 304 1423, 304' AND  NOT (codigo = 150223  OR codigo = 150224);
+
+ALTER TABLE pedidos RENAME TO pedidos_antigos; 
+
+CREATE TABLE pedidos (
+codigo INTEGER PRIMARY KEY, 
+cliente TEXT, 
+coleta_empresa TEXT,
+coleta_responsavel TEXT,
+coleta_endereco TEXT,
+entrega_empresa TEXT,
+entrega_endreco TEXT, 
+tipo_servico TEXT,
+zona TEXT, 
+preco REAL, 
+entregador TEXT,
+status TEXT, 
+data_hora_coleta TIMESTAMP,
+data_registro TIMESTAMP, 
+retorno BOOLEAN,
+pago_em_dinheiro BOOLEAN, 
+parceiros_codigo INTEGER, 
+
+-- chave estrangeira:: 
+FOREIGN KEY  (parceiros_codigo) REFERENCES parceiros (codigo)  
+);
+
+INSERT INTO pedidos (
+codigo, 
+cliente , 
+coleta_empresa, 
+coleta_responsavel , coleta_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta, data_registro, retorno, pago_em_dinheiro
+)
+
+SELECT codigo, 
+cliente , 
+coleta_empresa, 
+coleta_responsavel , coleta_endereco, tipo_servico, zona, preco, entregador, status, data_hora_coleta, data_registro, retorno, pago_em_dinheiro
+ FROM pedidos_antigos pa ;
+
+INSERT INTO parceiros (codigo, em_prospeccao, cnpj, razao_social, cidade, estado, nome_contato) 
+VALUES (436, 0, '45.647.512/0001-2', 'Wilti Ótica Ltda', 'Porto Alegre', 'Rio Grande do Sul', 'Eduardo'); 
+
+UPDATE pedidos SET parceiros_codigo = 436 
+WHERE cliente = 'Wilti Ótica LDTA';
+
+SELECT pedidos.*, parceiros.cnpj FROM pedidos JOIN parceiros ON parceiros.codigo = parceiros_codigo;
