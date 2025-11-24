@@ -1,0 +1,70 @@
+-- 29/10/2025
+-- Primeiros passos em SQlite
+
+insert into pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, retorno, tipo_servico, zona, preco, pago_em_dinheiro, entregador, status) 
+values (150233, 'Wilti Ótica LDTA', null, 'Visoarte Laboratório Ótico', 'Chaves barcelos 36/904', 'Wilti Ótica LDTA', 'Rua lima e Silva 594/sala 4', 0, 'expressa' , 'A', 14 , 0, 'Symon', 'entregue');
+
+insert into pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, retorno, tipo_servico, zona, preco, pago_em_dinheiro, entregador, status) 
+values (150231, 'Francesa Osorio de Napoli' , 'Costureira' , null, 'Cristovão Colombo, 460 sala 401', null, 'Casemiro 758', 0, 'expressa', 'B', 17, 0, '*indefinido', 'entregue'); 
+
+insert into pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, retorno, tipo_servico, zona, preco, pago_em_dinheiro, entregador, status) 
+values (150230, 'Wilti Ótica LDTA', 'Wilti Ótica LDTA', 'Eduardo', 'Padre Chagas 66' , 'Wilti Ótica LDTA', 'Rua lima e Silva 594/sala 4 (Bairro: Cidade Baixa)', 0, 'expressa' , 'A', 14 , 0, 'Symon', 'entregue' );
+
+insert into pedidos (codigo, cliente, coleta_empresa, coleta_responsavel,coleta_endereco ,entrega_empresa , entrega_endereco, retorno, tipo_servico, zona, preco, pago_em_dinheiro, entregador, status) 
+values (150229, 'Wilti Ótica LDTA', 'Wilti Ótica LDTA', 'Eduardo', 'Rua Padre Chagas 66', 'Visoarte Laboratório Ótico', 'Chaves Barcelos 36/905',  0, 'expressa' , 'A', 14 , 0, 'Symon', 'entregue');
+
+insert into pedidos (codigo, cliente) 
+values (1502288, 'Tranferencia' ) ;
+
+insert into pedidos (codigo, cliente) 
+values (1502288, 'Transferencia' );
+
+update pedidos set cliente = 'Transferência' where codigo =  150228;
+
+update pedidos set codigo = 150228 where codigo = 1502288; 
+
+update pedidos set coleta_empresa = 'Mouse Serigrafia / Thiago Pereira Serviços artísticos' where codigo = 150228; 
+
+update pedidos set coleta_responsavel = 'Thiago Sacco Pereira', coleta_endereco = 'Olavo Bilack,188' where codigo = 150228; 
+
+DELETE from pedidos where codigo = 100232; 
+
+select cliente from pedidos; 
+
+SELECT  cliente from pedidos where codigo = 150232;
+
+select cliente, codigo from pedidos where cliente = 'Wilti Ótica LDTA';
+
+select cliente from pedidos group by cliente ;
+
+select cliente, count(*), coleta_empresa from pedidos group by cliente;
+
+update pedidos set data_hora_coleta = '2025-10-22 15:38:00' where codigo = 150232 ;
+
+update pedidos set data_hora_coleta = '2025-10-24 15:00:00' where codigo = 150231 ;
+
+select * from pedidos where data_hora_coleta > '2025-10-23 00:00:00'; 
+
+select preco from pedidos where data_hora_coleta > '2025-10-23 00:00:00'; 
+
+alter table pedidos add data_registro timestamp;
+
+update pedidos set data_registro = '1970-01-01 00:00:00' ;
+
+update pedidos set data_registro = '2025-10-22 15:22:00' where codigo = 150231; 
+
+select * from pedidos where data_registro > '1980-01-01';
+
+ALTER TABLE PEDIDOS drop column column2; 
+
+ALTER TABLE PEDIDOS drop column column1;
+
+alter table pedidos drop column retorno; 
+
+alter table pedidos drop column pago_em_dinheiro;
+
+alter TABLE pedidos add retorno boolean; 
+
+alter table pedidos add pago_em_dinheiro boolean; 
+
+select * from parceiros;
