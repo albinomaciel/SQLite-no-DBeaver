@@ -1,5 +1,5 @@
 -- O QUE EU QUERO APRENDER/APLICAR ?
--- Precisa dominar:
+
 
 SELECT: comando usado para consultar e visualizar dados de uma ou mais tabelas no banco.
 
@@ -16,3 +16,89 @@ AVG:comando usado para calcular a média dos valores numéricos de uma coluna.
 SUM: comando usado para calcular a soma total dos valores numéricos de uma coluna.
 
 ORDER BY: comando usado para organizar o resultado da consulta em ordem crescente (ASC) ou decrescente (DESC) com base em uma coluna.
+
+
+
+-- Operadores Lógicos
+AND: Exige que todas as condições sejam verdadeiras.
+
+OR: Exige que pelo menos uma condição seja verdadeira.
+
+NOT: Inverte uma condição (nega o resultado).
+
+
+
+-- SÍMBOLOS E SUAS UTILIDADES:
+
+1) Símbolos Estruturais
+* : Representa todas as colunas de uma tabela.
+
+, : Separa colunas ou valores dentro de uma consulta.
+
+; : Indica o fim de um comando SQL.
+
+() : Agrupa condições ou define parâmetros de funções.
+
+2) Operadores de Texto
+' ' (aspas simples): Delimitam valores de texto.
+
+LIKE : Permite buscar padrões em texto.
+
+% : Representa qualquer sequência de caracteres em uma busca com LIKE.
+
+_ : Representa um único caractere em uma busca com LIKE.
+
+3) Operadores de Intervalo
+
+BETWEEN : Seleciona valores dentro de um intervalo específico.
+
+IN : Permite verificar se um valor está dentro de uma lista.
+
+4) Operadores Matemáticos
+
++ : Realiza adição.
+
+- : Realiza subtração.
+
+* : Realiza multiplicação.
+
+/ : Realiza divisão.
+
+
+-- PEGADINHA::: 
+- qual é a diferença entre AND e OR?
+
+AND: Retorna resultado somente quando todas as condições são verdadeiras ao mesmo tempo.
+
+OR : Retorna resultado quando pelo menos uma das condições é verdadeira.
+
+!Forma simples de lembrar:
+
+AND = restritivo (afunila o resultado)
+
+OR = mais amplo (expande o resultado)
+
+Exemplo:
+
+WHERE zona = 'A' AND preco > 15
+[Só traz pedidos da zona A que também custam mais de 15.] 
+
+WHERE zona = 'A' OR preco > 15
+[Traz pedidos da zona A ou qualquer pedido acima de 15 (mesmo que não seja da zona A).]
+
+
+-- QUAIS INFORMAÇÕES TENHO EM MINHA TABELA?
+
+- Nome do cliente
+
+- Código do cliente
+
+- Taxa de entrega
+
+- Entregador (quem buscou e levou)
+
+- Local de retirada
+
+- Local de entrega
+
+-- Quais perguntas de negócio posso criar com base nessas informações? 
