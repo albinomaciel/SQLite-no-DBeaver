@@ -1,1 +1,18 @@
+-- O QUE EU QUERO APRENDER/APLICAR ?
+-- Precisa dominar:
 
+SELECT: comando usado para consultar e visualizar dados de uma ou mais tabelas no banco.
+
+WHERE: comando usado para filtrar registros com base em uma condição específica.
+
+GROUP BY: comando usado para agrupar registros que possuem valores iguais em uma coluna, permitindo realizar cálculos agregados por categoria.
+
+JOIN: comando usado para conectar duas ou mais tabelas com base em uma coluna em comum, permitindo combinar informações relacionadas.
+
+COUNT: comando usado para retornar a quantidade de registros em um conjunto de dados. (?)
+
+AVG:comando usado para calcular a média dos valores numéricos de uma coluna.
+
+SUM: comando usado para calcular a soma total dos valores numéricos de uma coluna.
+
+ORDER BY: comando usado para organizar o resultado da consulta em ordem crescente (ASC) ou decrescente (DESC) com base em uma coluna.
